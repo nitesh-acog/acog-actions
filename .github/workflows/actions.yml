@@ -1,0 +1,17 @@
+name: run github actions
+
+on: [push]
+
+jobs:
+    run-github-actions:
+      runs-on: ubuntu-latest
+      steps:
+        - name: running action
+          id: greet
+          uses: actions/hello-world-javascript-action@v1
+          with:
+            who-to-greet: Nitesh
+        - name: taking output from before step with id
+          run: echo "${{steps.greet.outputs.time}}"
+          # time here is the out mention by action in repo and also the input is mentioned
+          # with takes the input for the action
