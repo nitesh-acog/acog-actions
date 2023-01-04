@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: bash shell commands running
         run: |
-          echo "nitesh"
+          echo "nitesh kumar"
           pwd
           ls -a
         shell: bash
