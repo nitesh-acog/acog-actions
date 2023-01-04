@@ -1,0 +1,12 @@
+name: self-hosted
+on: [push]
+jobs:
+  running-bash-commands:
+    runs-on: niteshvm
+    steps:
+      - name: bash shell commands running
+        run: |
+          echo "nitesh"
+          pwd
+          ls -a
+        shell: bash
