@@ -16,3 +16,10 @@ jobs:
               import platform
               print(platform.processor())
             shell: python
+    
+    run-windows-commands:
+        runs-on: windows-latest
+        steps:
+          - name: running bash coommands in windows
+            run: pwd
+            shell: bash
