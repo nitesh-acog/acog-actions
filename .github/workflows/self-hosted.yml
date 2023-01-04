@@ -2,7 +2,7 @@ name: self-hosted
 on: [push]
 jobs:
   running-bash-commands:
-    runs-on: niteshvm
+    runs-on: self-hosted
     steps:
       - name: bash shell commands running
         run: |
