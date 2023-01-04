@@ -23,3 +23,10 @@ jobs:
           - name: running bash coommands in windows
             run: pwd
             shell: bash
+    run-windows-commands1:
+        runs-on: windows-latest
+        needs: [run-windows-commands]
+        steps:
+          - name: running bash coommands in windows
+            run: pwd
+            shell: bash
