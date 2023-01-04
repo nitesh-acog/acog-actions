@@ -1,0 +1,16 @@
+name: filtering branches
+
+on:
+  push:
+    branches:
+      - dev
+      - main
+
+jobs:
+    running-python-shell:
+      runs-on: ubuntu-latest
+      steps:
+        - name: filter branches practise
+          run: |
+            print('practising filtering through branches to run workflow')
+          shell: python
